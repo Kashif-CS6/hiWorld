@@ -23,7 +23,7 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: 'KashifServer',
-                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/kashifdesktop')],
+                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/var/www.html')],
     
                         )
                     ]
